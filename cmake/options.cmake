@@ -52,8 +52,8 @@ option(DNNL_ENABLE_MAX_CPU_ISA
 
 set(DNNL_LIBRARY_TYPE "SHARED" CACHE STRING
     "specifies whether DNNL library should be SHARED or STATIC")
-option(DNNL_BUILD_EXAMPLES "builds examples"  ON)
-option(DNNL_BUILD_TESTS "builds tests" ON)
+option(DNNL_BUILD_EXAMPLES "builds examples"  OFF)
+option(DNNL_BUILD_TESTS "builds tests" OFF)
 option(DNNL_BUILD_FOR_CI "specifies whether DNNL library should be built for CI" OFF)
 option(DNNL_WERROR "treat warnings as errors" OFF)
 

@@ -65,7 +65,7 @@ namespace impl {
     T &operator=(const T &) = delete;
 
 // Sanity check for 64 bits
-static_assert(sizeof(void *) == 8, "DNNL supports 64 bit only");
+// static_assert(sizeof(void *) == 8, "DNNL supports 64 bit only");
 
 #define CHECK(f) \
     do { \

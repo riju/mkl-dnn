@@ -135,7 +135,7 @@ inline int ilog2q(size_t v) {
             p += pw; \
         } \
     } while (0)
-    CP(32);
+    // CP(32);
     CP(16);
     CP(8);
     CP(4);

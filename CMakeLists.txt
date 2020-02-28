@@ -66,9 +66,9 @@ else()
     project(${PROJECT_NAME} VERSION "${PROJECT_VERSION}" LANGUAGES C CXX)
 endif()
 
-if (NOT CMAKE_SIZEOF_VOID_P EQUAL 8)
-    message(FATAL_ERROR "DNNL supports 64 bit platforms only")
-endif()
+#if (NOT CMAKE_SIZEOF_VOID_P EQUAL 8)
+#    message(FATAL_ERROR "DNNL supports 64 bit platforms only")
+#endif()
 
 list(APPEND CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake")
 
@@ -85,7 +85,7 @@ include("cmake/mkldnn_compat.cmake")
 
 include("cmake/utils.cmake")
 include("cmake/options.cmake")
-include("cmake/OpenMP.cmake")
+#include("cmake/OpenMP.cmake")
 include("cmake/TBB.cmake")
 include("cmake/OpenCL.cmake")
 include("cmake/platform.cmake")
