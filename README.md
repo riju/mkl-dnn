@@ -1,3 +1,13 @@
+WASM-ify MKL-DNN
+==================================
+
+```
+mkdir build
+cd build
+emconfigure cmake -DNNL_LIBRARY_TYPE=STATIC -DNNL_CPU_RUNTIME=SEQ -DNNL_BUILD_EXAMPLES=OFF -DNNL_BUILD_TESTS=OFF -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_FLAGS="-s USE_PTHREADS=0 -s SIDE_MODULE=1" -DCMAKE_CXX_FLAGS="-s USE_PTHREADS=0 -s SIDE_MODULE=1" ..
+emmake make --jobs=$(nproc --all)
+```
+
 Deep Neural Network Library (DNNL)
 ==================================
 
